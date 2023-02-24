@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+   overflow: hidden;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top,.bottom{
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    transform-origin: center;
+    
+}
+.close .top{
+    transform: rotate(45deg) translate(5px);
+    
+}
+.close .bottom{
+    transform: rotate(-45deg) translate(5px);
+}
+.close{
+    display: none;
+}
+.logo{
+    color: #333;
+}
+.logo,.menu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.logo h1,.menu h1{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.toggle{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 0;
+    align-items: center;
+    margin-left: 10px;
+}
+.main-content{
+    color: #fff;
+    width: 60%;
+    position: absolute;
+    right: -100%;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+.img-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+   
+}
+.img{
+    width: 200px;
+    background: #333;
+    position: relative;
+}
+img{
+    width: 100%;
+    transform: translateY(80px);
+}
+.img p{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.heading h1{
+    text-transform: capitalize;
+    margin-right: 15px;
+}
+.line{
+    width: 0;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 50px;
+    top: 30%;
+    
+}
+.side-content{
+    width: 300px;;
+    position: absolute;
+    left: 50px;
+    top: 32%;
+    color: #999;
+    transform: translateY(-8px);
+    opacity: 0;
+}
+.side-content h3{
+    line-height: 40px;
+}
+.side-content h3::before{
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #999;
+    display: flex;
+    border-radius: 50%;
+    position: relative;
+    top: 23px;
+    right: 15px;
+}
+.social{
+    width: 300px;
+    color: #fff;
+    position: absolute;
+    left: 50px;
+    bottom: 8%;
+}
+.social ul{
+    display: flex;
+    list-style: none;
+}
+.social li{
+    margin: 0 8px;
+    text-transform: capitalize;
+     transform: translateY(8px);
+    opacity: 0;
+}
+.text-box{
+   
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8%;
+}
+.text{
+    height: 80px;
+    overflow: hidden;
+}
+.text h1{
+    line-height: 80px;
+    font-size: 60px;
+    text-transform: capitalize;
+    color: transparent;
+    -webkit-text-stroke: 1px #999;
+    position: relative;
+    top: 100%;
+}
+.main-img{
+    width: 400px;
+    position: absolute;
+    left: 55%;
+}
+.left-str{
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    background: #a5a5af;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.m-head{
+    position: absolute;
+    left: 50px;
+    top: 30%;
+}
+.m-head .heading-text{
+    height: 80px;
+    overflow: hidden;
+}
+.m-head .heading-text h1{
+    font-size: 60px;
+    line-height: ;
+    text-transform: capitalize;
+    color: #222;
+    margin-top: 100%;
+}
+.des{
+    width: 300px;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+.btn{
+    text-transform: uppercase;
+    color: #222;
+    text-decoration: none;
+    position: absolute;
+    left: 20%;
+    top: 65%;
+    font-weight: 600;
+}
+.count{
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+.count h1{
+    font-size: 220px;
+    transform: translateY(20%);
+    color: transparent;
+    -webkit-text-stroke: 2px #868691;
+}

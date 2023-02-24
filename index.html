@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="all.min.js"></script>
+   <link rel="stylesheet" href="style.css".css>
+    <meta charset="UTF-8">
+    <title>globekit landing page design</title>
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="logo">
+            <div class="circle">
+                <p>GK</p>
+            </div>
+            <h1>globeKit</h1>
+        </div>
+        <div class="menu open">
+            <h1>menu</h1>
+            <div class="toggle" onclick="openm()">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+        </div>
+        <div class="menu close">
+            <h1>close</h1>
+            <div class="toggle" onclick="closem()">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="heading">
+            <h1>home</h1>
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="img-box">
+            <div class="img">
+                <p>this is globekit</p>
+                <img src="./images/img1.png" alt="">
+            </div>
+            <div class="img">
+                <p>customize your globe</p>
+                <img src="./images/img2.png" alt="">
+            </div>
+            <div class="img">
+                <p>build to turn heads</p>
+                <img src="./images/img3.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class="line"></div>
+    <div class="side-content">
+        <h3>Lorem ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quidem explicabo veritatis amet nisi ex similique omnis, ducimus dolor veniam.</p>
+    </div>
+    
+    <div class="social">
+        <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+            <li>twitter</li>
+        </ul>
+    </div>
+   <div class="text-box">
+       <div class="text">
+           <h1>docs</h1>
+       </div>
+       <div class="text">
+           <h1>get started</h1>
+       </div>
+   </div>
+   
+   <div class="left-str">
+       <div class="container">
+           <div class="m-head">
+               <div class="heading-text"><h1>this is</h1></div>
+              <div class="heading-text"><h1>globeKit</h1></div>
+           </div>
+           <div class="des">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, illo. Lorem ipsum dolor sit amet.</p>
+           </div>
+           <a href="#" class="btn">learn more <i class="fas fa-arrow-right"></i></a>
+       </div>
+   </div>
+   
+   <div class="main-img">
+       <img src="./images/img2.png" alt="">
+   </div>
+   
+   <div class="count">
+       <h1>01</h1>
+   </div>
+   
+   
+   <script src="gsap.min.js"></script>
+   
+   <script>
+       
+        gsap.to('.close', 0, {
+             display: 'none'
+          
+       })
+       
+       gsap.from('.left-str', .5, {
+           width: '0',
+          
+       })
+       gsap.from('.main-img', .5, {
+           left: '-100%',
+           delay: .2
+          
+       })
+       
+       gsap.to('.m-head .heading-text h1', .5, {
+           marginTop: 0,
+           stagger: .2,
+           delay: .7
+       })
+       gsap.from('.des', .5, {
+           y: 10,
+           opacity: 0,
+           delay: .9
+       })
+        gsap.from('.logo', .5, {
+           y: 10,
+           opacity: 0,
+           delay: .9
+       })
+        gsap.from('.menu', .5, {
+           y: 10,
+           opacity: 0,
+           delay: .9
+       })
+       
+       
+       function openm(){
+            gsap.to('.open', 0, {
+           display: 'none'
+          
+       })
+            gsap.to('.count', 0, {
+           display: 'none'
+          
+       })
+            gsap.to('.logo', .5, {
+           color: '#fff'
+          
+       })
+             gsap.to('.close', .5, {
+             display: 'flex'
+          
+       })
+          
+           
+           gsap.to('.left-str', .5, {
+           width: '0',
+           delay: .7
+          
+       })
+       gsap.to('.main-img', .5, {
+           left: '-100%',
+           delay: .5
+           
+          
+       })
+       
+       gsap.to('.m-head .heading-text h1', .5, {
+           marginTop: '100%',
+           stagger: .2,
+           
+       })
+       gsap.to('.des', .5, {
+           y: 10,
+           opacity: 0,
+           delay: .9
+       })
+           
+           gsap.to('.main-content', .5, {
+               right: '0',
+               delay: .5
+           })
+           gsap.to('.line', .5, {
+               width: '300px',
+               delay: 1
+           })
+            gsap.to('.side-content', .5, {
+               y: 0,
+                opacity: 1,
+               delay: 1.1
+           })
+           gsap.to('.social li', .5, {
+               y: 0,
+                opacity: 1,
+               delay: 1.1,
+               stagger: .2
+           })
+            gsap.to('.text h1', .5, {
+               top: '0',
+                
+               delay: 1.1,
+               stagger: .2
+           })
+        
+       
+       }
+       
+        function closem(){
+            gsap.to('.open', 0, {
+           display: 'flex'
+          
+       })
+            gsap.to('.count', 0, {
+           display: 'block'
+          
+       })
+            gsap.to('.logo', .5, {
+           color: '#333'
+          
+       })
+             gsap.to('.close', .5, {
+             display: 'none'
+          
+       })
+          
+           
+           gsap.to('.left-str', .5, {
+           width: '70%',
+           delay: .7
+          
+       })
+       gsap.to('.main-img', .5, {
+           left: '55%',
+           delay: .5
+           
+          
+       })
+       
+       gsap.to('.m-head .heading-text h1', .5, {
+           marginTop: '0',
+           stagger: .2,
+           delay: 1
+           
+       })
+       gsap.to('.des', .5, {
+           y: 0,
+           opacity: 1,
+           delay: 1
+       })
+           
+           gsap.to('.main-content', .5, {
+               right: '-100%',
+               delay: .5
+           })
+           gsap.to('.line', .5, {
+               width: '0',
+               delay: .1
+           })
+            gsap.to('.side-content', .5, {
+               y: '-8px',
+                opacity: 0,
+              
+           })
+           gsap.to('.social li', .5, {
+               y: '8px',
+                opacity: 0,
+              
+               stagger: .2
+           })
+            gsap.to('.text h1', .5, {
+               top: '100%',
+                
+              
+               stagger: .2
+           })
+        
+       
+       }
+       
+       
+       
+   </script>
+    
+</body>
+</html>
